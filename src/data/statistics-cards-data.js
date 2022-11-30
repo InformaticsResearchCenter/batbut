@@ -8,9 +8,9 @@ import {
 export const statisticsCardsData = [
   {
     color: "blue",
-    icon: ChartBarIcon,
+    icon: BanknotesIcon,
     title: "Vetebrata",
-    value: "53,252",
+    value: "23,342",
     footer: {
       color: "text-green-500",
       value: "+55%",
@@ -19,35 +19,35 @@ export const statisticsCardsData = [
   },
   {
     color: "pink",
-    icon: ChartBarIcon,
+    icon: UserIcon,
     title: "Invetebrata",
     value: "2,300",
     footer: {
       color: "text-green-500",
       value: "+3%",
-      label: "than last week",
+      label: "than last month",
     },
   },
   {
     color: "green",
-    icon: ChartBarIcon,
+    icon: UserPlusIcon,
     title: "Bebatuan",
     value: "3,462",
     footer: {
       color: "text-red-500",
       value: "-2%",
-      label: "than last week",
+      label: "than yesterday",
     },
   },
   {
     color: "orange",
     icon: ChartBarIcon,
-    title: "Artefak",
+    title: "Fosil",
     value: "103,430",
     footer: {
       color: "text-green-500",
       value: "+5%",
-      label: "than last week",
+      label: "than yesterday",
     },
   },
 ];

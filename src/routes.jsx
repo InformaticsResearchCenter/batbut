@@ -6,8 +6,10 @@ import {
   ArrowRightOnRectangleIcon,
   UserPlusIcon,
 } from "@heroicons/react/24/solid";
-import { Home, Profile, Tables, Notifications } from "@/pages/dashboard";
+import { Home, Profile, Tables, Notifications ,Batuan,Artefak,Invertebrata} from "@/pages/dashboard";
 import { SignIn, SignUp } from "@/pages/auth";
+import { GiftIcon } from "@heroicons/react/24/outline";
+
 
 const icon = {
   className: "w-5 h-5 text-inherit",
@@ -40,6 +42,24 @@ export const routes = [
         name: "notifactions",
         path: "/notifactions",
         element: <Notifications />,
+      },
+      {
+        icon: <GiftIcon {...icon} />,
+        name: "batuan",
+        path: "/batuan",
+        element: <Batuan />,
+      },
+        {
+        icon: <GiftIcon {...icon} />,
+        name: "artefak",
+        path: "/artefak",
+        element: <Artefak />,
+      },
+        {
+        icon: <GiftIcon {...icon} />,
+        name: "invertebrata",
+        path: "/invertebrata",
+        element: <Invertebrata />,
       },
     ],
   },

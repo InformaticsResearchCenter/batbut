@@ -19,7 +19,7 @@ export function Dashboard() {
       <Sidenav
         routes={routes}
         brandImg={
-          sidenavType === "dark" ? "/img/tabfavicon.png" : "/img/tabfavicon.png"
+          sidenavType === "dark" ? "https://i.ibb.co/D7pKqPS/museum-geologi-bandung.jpg" : "https://i.ibb.co/D7pKqPS/museum-geologi-bandung.jpg"
         }
       />
       <div className="p-4 xl:ml-80">
