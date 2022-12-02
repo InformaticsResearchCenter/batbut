@@ -45,19 +45,19 @@ export const routes = [
       },
       {
         icon: <GiftIcon {...icon} />,
-        name: "batuan",
+        name: "BATUAN",
         path: "/batuan",
         element: <Batuan />,
       },
         {
         icon: <GiftIcon {...icon} />,
-        name: "artefak",
+        name: "SUMBER DAYA",
         path: "/artefak",
         element: <Artefak />,
       },
         {
         icon: <GiftIcon {...icon} />,
-        name: "invertebrata",
+        name: "FOSIL",
         path: "/invertebrata",
         element: <Invertebrata />,
       },
