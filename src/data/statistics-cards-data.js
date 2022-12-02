@@ -8,8 +8,8 @@ import {
 export const statisticsCardsData = [
   {
     color: "blue",
-    icon: BanknotesIcon,
-    title: "Vetebrata",
+    icon: ChartBarIcon,
+    title: "Sumber Daya Alam",
     value: "23,342",
     footer: {
       color: "text-green-500",
@@ -19,8 +19,8 @@ export const statisticsCardsData = [
   },
   {
     color: "pink",
-    icon: UserIcon,
-    title: "Invetebrata",
+    icon: ChartBarIcon,
+    title: "Batuan",
     value: "2,300",
     footer: {
       color: "text-green-500",
@@ -30,8 +30,8 @@ export const statisticsCardsData = [
   },
   {
     color: "green",
-    icon: UserPlusIcon,
-    title: "Bebatuan",
+    icon: ChartBarIcon,
+    title: "Fosil",
     value: "3,462",
     footer: {
       color: "text-red-500",
@@ -39,17 +39,17 @@ export const statisticsCardsData = [
       label: "than yesterday",
     },
   },
-  {
-    color: "orange",
-    icon: ChartBarIcon,
-    title: "Fosil",
-    value: "103,430",
-    footer: {
-      color: "text-green-500",
-      value: "+5%",
-      label: "than yesterday",
-    },
-  },
+  // {
+  //   color: "orange",
+  //   icon: ChartBarIcon,
+  //   title: "Fosil",
+  //   value: "103,430",
+  //   footer: {
+  //     color: "text-green-500",
+  //     value: "+5%",
+  //     label: "than yesterday",
+  //   },
+  // },
 ];
 
 export default statisticsCardsData;
