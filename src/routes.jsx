@@ -3,12 +3,12 @@ import {
   UserCircleIcon,
   TableCellsIcon,
   BellIcon,
+  PencilIcon,
   ArrowRightOnRectangleIcon,
   UserPlusIcon,
 } from "@heroicons/react/24/solid";
-import { Home, Profile, Tables, Notifications ,Batuan,Artefak,Invertebrata} from "@/pages/dashboard";
+import { Home, Profile, Tables, Batuan, Sumberdayaalam, Fosil} from "@/pages/dashboard";
 import { SignIn, SignUp } from "@/pages/auth";
-import { GiftIcon } from "@heroicons/react/24/outline";
 
 
 const icon = {
@@ -37,29 +37,23 @@ export const routes = [
         path: "/tables",
         element: <Tables />,
       },
-      // {
-      //   icon: <BellIcon {...icon} />,
-      //   name: "notifactions",
-      //   path: "/notifactions",
-      //   element: <Notifications />,
-      // },
       {
-        icon: <GiftIcon {...icon} />,
-        name: "BATUAN",
+        icon: <PencilIcon {...icon} />,
+        name: "Sumber Daya Alam",
+        path: "/sumberdayaalam",
+        element: <Sumberdayaalam />,
+      },
+      {
+        icon: <PencilIcon {...icon} />,
+        name: "Batuan",
         path: "/batuan",
         element: <Batuan />,
       },
-        {
-        icon: <GiftIcon {...icon} />,
-        name: "SUMBER DAYA",
-        path: "/artefak",
-        element: <Artefak />,
-      },
-        {
-        icon: <GiftIcon {...icon} />,
-        name: "FOSIL",
-        path: "/invertebrata",
-        element: <Invertebrata />,
+      {
+        icon: <PencilIcon {...icon} />,
+        name: "Fosil",
+        path: "/fosil",
+        element: <Fosil/>,
       },
     ],
   },

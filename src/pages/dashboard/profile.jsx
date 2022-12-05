@@ -50,7 +50,7 @@ export function Profile() {
                 </Typography>
               </div>
             </div>
-            <div className="w-96">
+            {/* <div className="w-96">
               <Tabs value="app">
                 <TabsHeader>
                   <Tab value="app">
@@ -67,7 +67,7 @@ export function Profile() {
                   </Tab>
                 </TabsHeader>
               </Tabs>
-            </div>
+            </div> */}
           </div>
           <div className="gird-cols-1 mb-12 grid gap-12 px-4 lg:grid-cols-2 xl:grid-cols-3">
             <div>

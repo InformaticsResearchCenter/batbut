@@ -11,7 +11,7 @@ import {
 } from "@material-tailwind/react";
 
 
-export function Fosil() {
+export function Sumberdayaalam() {
     return (
         <Card className="mb-12">
             <div className="">
@@ -20,7 +20,7 @@ export function Fosil() {
                 shadow={false} 
                 className="lg:w-1/3 w-full">
                     <Typography className="" variant="h3">
-                        Fosil
+                        Sumber Daya Alam
                     </Typography>
                 </CardHeader>                   
                 <CardBody>
@@ -557,4 +557,4 @@ export function Fosil() {
     );
 }
 
-export default Fosil;
+export default Sumberdayaalam;

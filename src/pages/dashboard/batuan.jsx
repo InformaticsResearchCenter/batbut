@@ -4,414 +4,556 @@ import {
     CardHeader,
     CardBody,
     Input,
+    Typography,
+    Select, 
+    Option,
+    Button,
 } from "@material-tailwind/react";
 
 
 export function Batuan() {
     return (
-        <Card className=" justify-center">
+        <Card className="mb-12">
             <div className="">
-            <CardHeader 
-            floated={false}
-            shadow={false} 
-            className="lg:w-1/3 w-full">
-            <h1 className="mb-10  items-center justify-between">Fosil</h1>
-                </CardHeader>
-                <CardBody className="">
-                    
-                    <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">KATERI BMN*</h1>
-                        <Input className="grid justify-items-start " label="KATEGORI BMN" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">                
-            </div>
-                        </div>        
-                    </CardBody>
-        
-         <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">NUP BMN</h1>
-                        <Input className="grid justify-items-start" label="NUP BMN" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-                    
-                 <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">TIPE BMN</h1>
-                        <Input className="grid justify-items-start" label="TIPE BMN" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-        
-        <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">NO-AWAL</h1>
-                        <Input className="grid justify-items-start" label="NO-AWAL" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-        
-                 <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">SATUAN</h1>
-                        <Input className="grid justify-items-start " label="SATUAN" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-        
-
+                <CardHeader 
+                floated={false}
+                shadow={false} 
+                className="lg:w-1/3 w-full">
+                    <Typography className="" variant="h3">
+                        Batuan
+                    </Typography>
+                </CardHeader>                   
                 <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">KELOMPOK KOLEKSI</h1>
-                        <Input className="grid justify-items-start " label="KELOMPOK KOLEKSI" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-
-                <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">JENIS KOLEKSI</h1>
-                        <Input className="grid justify-items-start " label="JENIS KOLEKSI" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-        
-                 <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">SUB JENIS KOLEKSI</h1>
-                        <Input className="grid justify-items-start " label="SUB JENIS KOLEKSI" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-        
-                 <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">KODE JENIS KOLEKSI</h1>
-                        <Input className="grid justify-items-start " label="KODE JENIS KOLEKSI" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-        
-                 <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">RUANGAN PENYIMPANAN</h1>
-                        <Input className="grid justify-items-start " label="RUANGAN PENYIMPANAN" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-        
-                <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">LOKASI PENYIMPANAN</h1>
-                        <Input className="grid justify-items-start " label="" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-        
-                 <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">KONDISI</h1>
-                        <Input className="grid justify-items-start " label="KONDISI" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-        
-                 <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">NAMA KOLEKSI</h1>
-                        <Input className="grid justify-items-start " label="NAMA KOLEKSI" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-        
-                 <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">KETERANGAN</h1>
-                        <Input className="grid justify-items-start " label="KETERANGAN" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-
-                <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">UMUR GEOLOGI</h1>
-                        <Input className="grid justify-items-start" label="UMUR GEOLOGI" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-        
-                <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">NAMA FORMASI</h1>
-                        <Input className="grid justify-items-start " label="NAMA FORMASI" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-        
-                <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">LOKASI TEMUAN</h1>
-                        <Input className="grid justify-items-start " label="LOKASI TEMUAN" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-        
-                 <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">LOKASI AWAL</h1>
-                        <Input className="grid justify-items-start " label="LOKASI AWAL" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-        
-         <CardBody>
-          <div className="flex justify-start">
-          <h1 className=" flex justify-start md:md-inset-0">KOORDINAT</h1>
-                    <div className="bg-slate-100 rounded-lg px-5 w-72 pr-4 flex">
-                        <div className="flex justify-end ml-9">
-                            <div className="ml-10 flex justify-end">
-                                <div className="mr-2 ml-2">
-                                <Input className="grid justify-items-start " label="X" />
-                                </div>
-                                    
-                            <div className="mr-2 ml-4">
-                                    <Input className="grid justify-items-start " label="Y" />
-                                </div>
-                                
-                                 <div className="mr-2 ml-4">
-                        <Input className="grid justify-items-start "  label="Z" />
-                                </div>     
-                                </div>
-            
-                        </div>
-                        </div>
-            </div>
-        </CardBody>
-        
-                 <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">PULAU</h1>
-                        <Input className="grid justify-items-start " label="PULAU" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-
-               <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">PETA</h1>
-                        <Input className="grid justify-items-start " label="PETA" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-        
-               <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">LEMBAR PETA</h1>
-                        <Input className="grid justify-items-start " label="LEMBAR PETA" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-        
-               <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">SKALA</h1>
-                        <Input className="grid justify-items-start " label="SKALA" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-        
-               <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">CARA PEROLEHAN</h1>
-                        <Input className="grid justify-items-start " label="CARA PEROLEHAN" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-        
-        <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">TAHUN PEROLEHAN</h1>
-                        <Input className="grid justify-items-start " label="TAHUN PEROLEHAN" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-        
-        <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">DETEMINATOR</h1>
-                        <Input className="grid justify-items-start " label="DETEMINATOR" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-        
-        <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">KOLEKTOR</h1>
-                        <Input className="grid justify-items-start " label="KOLEKTOR" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-        
-        <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">KEPEMILIKAN</h1>
-                        <Input className="grid justify-items-start " label="PUBLIKASI" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-        
-        <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">NILAI PEROLEHAN</h1>
-                        <Input className="grid justify-items-start " label="NILAI PEROLEHAN" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-
-        <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">NILAI BUKU</h1>
-                        <Input className="grid justify-items-start " label="NILAI BUKU" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-        
-        <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">GAMBAR 1</h1>
-                        <Input className="grid justify-items-start " label="GAMAR 1" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-
-        <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">GAMBAR 2</h1>
-                        <Input className="grid justify-items-start " label="GAMBAR 2" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-        
-        <CardBody>
-          <div className="flex justify-start">
-                            <h1 className="justify-start w-60 md:md-inset-0">GAMBAR 3</h1>
-                        <Input className="grid justify-items-start " label="GAMBAR 3" />   
-                        </div>
-                    <div className="bg-slate-100 rounded-lg px-5 w-80 pr-4  ">
-                        <div className="col-start-1 col-end-7 ">             
-            </div>
-                        </div>
-                    </CardBody>
-        
-        <div className="grid justify-items-start ml-20">
-        <CardBody className="justify-center">
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-  Button
-          </button>
-          <button class="bg-gray-400 hover:bg-gray-400 text-white font-bold py-2 px-4 rounded-full  ">
-  Button
-                    </button>
-                   
+                    <div className="flex justify-start">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                            >
+                                Kategori BMN*
+                        </Typography>
+                        <Select className="w-full shadow-lg" label="Select Kategori BMN">
+                            <Option>6.02.02.99.999</Option>
+                            <Option>6.06.01.05.005</Option>
+                            <Option>6.06.01.06.001</Option>
+                        </Select>  
+                    </div>
                 </CardBody>
-                
-            </div>
-            </CardBody> 
-     </div> 
-        </Card>
-      
+        
+                <CardBody>
+                    <div className="flex justify-start">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                        >
+                            NUP BMN
+                        </Typography>
+                        <div className="w-full">
+                            <Input 
+                                label="NUP BMN" 
+                            />
+                        </div>   
+                    </div>
+                </CardBody>
+                    
+                <CardBody>
+                    <div className="flex justify-start">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0" 
+                            variant="h6"
+                        >
+                            Tipe BMN
+                        </Typography>
+                            <Input 
+                                label="Tipe BMN" 
+                                disabled
+                            />   
+                    </div>
+                </CardBody>
+        
+                <CardBody>
+                    <div className="flex justify-start">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                            >
+                            No Awal
+                        </Typography>
+                            <Input label="No Awal" />   
+                    </div>
+                </CardBody>
+        
+                <CardBody>
+                    <div className="flex justify-start">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0" 
+                            variant="h6"
+                            >
+                            Satuan
+                        </Typography>
+                        <Select className="shadow-lg" label="Select Satuan">
+                            <Option>Buah</Option>
+                            <Option>Unit</Option>
+                            <Option>Set</Option>
+                        </Select>   
+                    </div>
+                </CardBody>
+        
+                <CardBody>
+                    <div className="flex justify-start">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0" 
+                            variant="h6"
+                            >
+                            Kelompok Koleksi
+                        </Typography>
+                        <Input 
+                            label="Kelompok Koleksi" 
+                            disabled
+                        />   
+                    </div>
+                </CardBody>
+
+                <CardBody>
+                    <div className="flex justify-start">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0" 
+                            variant="h6"
+                            >
+                            Jenis Koleksi*
+                        </Typography>
+                        <Select className="shadow-lg" label="Select Jenis Koleksi">
+                            <Option>Buah</Option>
+                            <Option>Unit</Option>
+                            <Option>Set</Option>
+                        </Select>     
+                    </div>
+                </CardBody>
+        
+                <CardBody>
+                    <div className="flex justify-start">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                            >
+                            Sub Jenis Koleksi
+                        </Typography>
+                        <Input 
+                            label="Sub Jenis Koleksi" 
+                        />   
+                    </div>
+                </CardBody>
+        
+                <CardBody>
+                    <div className="flex justify-start">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                            >
+                            Kode Jenis Koleksi
+                        </Typography>
+                        <Input 
+                            className="grid justify-items-start" 
+                            label="Kode Jenis Koleksi" 
+                        />   
+                    </div>
+                </CardBody>
+        
+                <CardBody>
+                    <div className="flex justify-start">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0" 
+                            variant="h6"
+                            >
+                            Ruangan Penyimpanan
+                        </Typography>
+                        <Input 
+                            className="grid justify-items-start" 
+                            label="Ruangan Penyimpanan" 
+                        />   
+                    </div>
+                </CardBody>
+        
+                <CardBody>
+                    <div className="flex justify-start">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                            >
+                            Lokasi Penyimpanan
+                        </Typography>
+                        <Input className="grid justify-items-start " label="Lokasi Penyimpanan" />   
+                    </div>
+                </CardBody>
+        
+                <CardBody>
+                    <div className="flex justify-start">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                            >
+                            Kondisi
+                        </Typography>
+                        <Input 
+                            className="grid justify-items-start" 
+                            label="Kondisi"
+                        />   
+                    </div>
+                </CardBody>
+        
+                <CardBody>
+                    <div className="flex justify-start">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                            >
+                            Nama Koleksi
+                        </Typography>
+                        <Input 
+                            className="grid justify-items-start" 
+                            label="Nama Koleksi" 
+                        />   
+                    </div>
+                </CardBody>
+        
+                <CardBody>
+                    <div className="flex justify-start">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                            >
+                            Keterangan
+                        </Typography>
+                        <Input 
+                            className="grid justify-items-start" 
+                            label="Keterangan"
+                        />   
+                    </div>
+                </CardBody>
+
+                <CardBody>
+                    <div className="flex justify-start">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0" 
+                            variant="h6"
+                            >
+                            Umur Geologi
+                        </Typography>
+                        <Input 
+                            className="grid justify-items-start" 
+                            label="Umur Geologi" 
+                        />   
+                    </div>
+                </CardBody>
+        
+                <CardBody>
+                    <div className="flex justify-start">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                            >
+                            Nama Formasi
+                        </Typography>
+                        <Input 
+                            className="grid justify-items-start" 
+                            label="Nama Formasi"
+                        />   
+                    </div>
+                </CardBody>
+        
+                <CardBody>
+                    <div className="flex justify-start">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                            >
+                            Lokasi Temuan
+                        </Typography>
+                        <Input 
+                            className="grid justify-items-start" 
+                            label="Lokasi Temuan"
+                        />   
+                    </div>
+                </CardBody>
+        
+                <CardBody>
+                    <div className="flex justify-start">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                            >
+                            Lokasi Awal
+                        </Typography>
+                        <Input 
+                            className="grid justify-items-start" 
+                            label="Lokasi Awal"
+                        />   
+                    </div>
+                </CardBody>
+        
+                <CardBody>
+                {/* <div className="flex">
+                    <Typography className="flex">
+                        Kordinat
+                    </Typography>
+                        <div className="bg-slate-100 rounded-lg px-5 w-72 pr-4 flex">
+                            <div className="flex justify-end ml-9">
+                                <div className="">
+                                    <div className="">
+                                        <Input className="" label="X" />
+                                    </div>                                   
+                                    <div className="mr-2 ml-4">
+                                        <Input className=" " label="Y" />
+                                    </div>
+                                    <div className="mr-2 ml-4">
+                                    <Input className=" "  label="Z" />
+                                    </div>     
+                                </div>
+                            </div>
+                        </div>
+                    </div> */}
+                    <div className="grid grid-flow-row auto-rows-max gap-4 md:auto-rows-min">
+                        <Typography 
+                            className="justify-start w-max md:md-inset-0"
+                            variant="h6"
+                        >
+                            Kordinat :
+                        </Typography>
+                        <div><Input className="" label="X"></Input></div>
+                        <div><Input className="" label="Y"></Input></div>
+                        <div><Input className="" label="Z"></Input></div>
+                    </div>
+                </CardBody>
+        
+                <CardBody>
+                    <div className="flex justify-start">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                            >
+                            Pulau
+                        </Typography>
+                        <Input 
+                            className="grid justify-items-start" 
+                            label="Pulau"
+                        />   
+                    </div>
+                </CardBody>
+
+                <CardBody>
+                    <div className="flex justify-start">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                            >
+                            Peta
+                        </Typography>
+                        <Input 
+                            className="grid justify-items-start" 
+                            label="Peta"
+                        />   
+                    </div>
+                </CardBody>
+        
+                <CardBody>
+                    <div className="flex justify-start">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                            >
+                            Lembar Peta
+                        </Typography>
+                        <Select className="w-full shadow-lg" label="Select Lembar Peta">
+                            <Option>Peta </Option>
+                            <Option>Peta </Option>
+                            <Option>Peta </Option>
+                        </Select>  
+                        </div>
+                </CardBody>
+        
+                <CardBody>
+                    <div className="flex justify-start">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                            >
+                            Skala
+                        </Typography>
+                        <Select className="w-full shadow-lg" label="Select Skala Peta">
+                            <Option>1:50.000</Option>
+                            <Option>1:100.000</Option>
+                            <Option>1:250.000</Option>
+                        </Select>   
+                    </div>
+                </CardBody>
+        
+                <CardBody>
+                    <div className="flex justify-start">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                            >
+                            Cara Perolehan
+                        </Typography>
+                        <Input 
+                            className="grid justify-items-start" 
+                            label="Cara Perolehan"
+                        />   
+                    </div>
+                </CardBody>
+        
+                <CardBody>
+                    <div className="flex justify-start">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                            >
+                            Tahun Perolehan
+                        </Typography>
+                        <Input 
+                            className="grid justify-items-start" 
+                            label="Tahun Perolehan"
+                        />   
+                    </div>
+                </CardBody>
+        
+                <CardBody>
+                    <div className="flex justify-start">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                            >
+                            Determinator
+                        </Typography>
+                        <Input 
+                            className="grid justify-items-start" 
+                            label="Determinator"
+                        />   
+                    </div>
+                </CardBody>
+        
+                <CardBody>
+                    <div className="flex justify-start">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                            >
+                            Kolektor
+                        </Typography>
+                        <Input 
+                            className="grid justify-items-start" 
+                            label="Kolektor"
+                        />   
+                    </div>
+                </CardBody>
+        
+                <CardBody>
+                    <div className="flex justify-start">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0" 
+                            variant="h6"
+                            >
+                            Kepemilikan Awal
+                        </Typography>
+                        <Input 
+                            className="grid justify-items-start" 
+                            label="Kepemilikan Awal"
+                        />   
+                    </div>
+                </CardBody>
+        
+                <CardBody>
+                    <div className="flex justify-start">
+                            <Typography 
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                            >
+                            Nilai Perolehan
+                        </Typography>
+                        <Input 
+                            className="grid justify-items-start" 
+                            label="Nilai Perolehan" 
+                        />   
+                    </div>
+                </CardBody>
+
+                <CardBody>
+                    <div className="flex justify-start">
+                            <Typography 
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                            >
+                            Nilai Buku
+                        </Typography>
+                        <Input 
+                            className="grid justify-items-start" 
+                            label="Nilai Buku" 
+                        />   
+                    </div>
+                </CardBody>
+        
+                <CardBody>
+                    <div className="flex justify-start">
+                            <Typography 
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                            >
+                            Gambar 1
+                        </Typography>
+                        <Input 
+                            className="grid justify-items-start" 
+                            label="Gambar 1" 
+                            type="file"
+                        />   
+                    </div>
+                </CardBody>
+
+                <CardBody>
+                    <div className="flex justify-start">
+                            <Typography 
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                            >
+                            Gambar 2
+                        </Typography>
+                        <Input 
+                            className="grid justify-items-start" 
+                            label="Gambar 2" 
+                            type="file"
+                        />   
+                    </div>
+                </CardBody>
+        
+                <CardBody>
+                    <div className="flex justify-start">
+                            <Typography 
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                            >
+                            Gambar 3
+                        </Typography>
+                        <Input 
+                            className="grid justify-items-start" 
+                            label="Gambar 3" 
+                            type="file"
+                        />   
+                    </div>
+                </CardBody>
+        
+            
+                <CardBody>
+                <div className="flex w-max gap-4">
+                    <Button 
+                        variant="outlined" color="red">
+                        Reset
+                    </Button>
+                    <Button>
+                        SImpan
+                    </Button>
+                </div>
+                </CardBody>
+            
+        </div> 
+    </Card>
     );
 }
 
