@@ -37,12 +37,12 @@ export const routes = [
         path: "/tables",
         element: <Tables />,
       },
-      {
-        icon: <BellIcon {...icon} />,
-        name: "notifactions",
-        path: "/notifactions",
-        element: <Notifications />,
-      },
+      // {
+      //   icon: <BellIcon {...icon} />,
+      //   name: "notifactions",
+      //   path: "/notifactions",
+      //   element: <Notifications />,
+      // },
       {
         icon: <GiftIcon {...icon} />,
         name: "BATUAN",
