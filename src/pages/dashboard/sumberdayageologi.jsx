@@ -8,10 +8,12 @@ import {
     Select, 
     Option,
     Button,
+    Textarea,
+    Radio, 
 } from "@material-tailwind/react";
 
 
-export function Sumberdayaalam() {
+export function Sumberdayageologi() {
     return (
         <Card className="mb-12">
             <div className="">
@@ -29,9 +31,9 @@ export function Sumberdayaalam() {
                             className="justify-start w-60 md:md-inset-0"
                             variant="h6"
                             >
-                                Kategori BMN*
+                                Kategori BMN *
                         </Typography>
-                        <Select className="w-full shadow-lg" label="Select Kategori BMN">
+                        <Select className="w-full shadow-lg" label="Pilih Kategori BMN" required>
                             <Option>6.02.02.99.999</Option>
                             <Option>6.06.01.05.005</Option>
                             <Option>6.06.01.06.001</Option>
@@ -90,7 +92,7 @@ export function Sumberdayaalam() {
                             >
                             Satuan
                         </Typography>
-                        <Select className="shadow-lg" label="Select Satuan">
+                        <Select className="shadow-lg" label="Pilih Satuan">
                             <Option>Buah</Option>
                             <Option>Unit</Option>
                             <Option>Set</Option>
@@ -119,12 +121,12 @@ export function Sumberdayaalam() {
                             className="justify-start w-60 md:md-inset-0" 
                             variant="h6"
                             >
-                            Jenis Koleksi*
+                            Jenis Koleksi *
                         </Typography>
-                        <Select className="shadow-lg" label="Select Jenis Koleksi">
-                            <Option>Buah</Option>
-                            <Option>Unit</Option>
-                            <Option>Set</Option>
+                        <Select className="shadow-lg" label="Pilih Jenis Koleksi">
+                            <Option>Pemanfaatan</Option>
+                            <Option>Bencana</Option>
+                            <Option>Tidak Terindentifikasi</Option>
                         </Select>     
                     </div>
                 </CardBody>
@@ -138,7 +140,9 @@ export function Sumberdayaalam() {
                             Sub Jenis Koleksi
                         </Typography>
                         <Input 
+                            className=""
                             label="Sub Jenis Koleksi" 
+                            disabled
                         />   
                     </div>
                 </CardBody>
@@ -154,6 +158,7 @@ export function Sumberdayaalam() {
                         <Input 
                             className="grid justify-items-start" 
                             label="Kode Jenis Koleksi" 
+                            disabled
                         />   
                     </div>
                 </CardBody>
@@ -164,7 +169,7 @@ export function Sumberdayaalam() {
                             className="justify-start w-60 md:md-inset-0" 
                             variant="h6"
                             >
-                            Ruangan Penyimpanan
+                            Ruang Penyimpanan
                         </Typography>
                         <Input 
                             className="grid justify-items-start" 
@@ -174,17 +179,104 @@ export function Sumberdayaalam() {
                 </CardBody>
         
                 <CardBody>
+                    <div className="grid grid-flow-row auto-rows-max gap-4 md:auto-rows-min">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                            >
+                            Lokasi Penyimpanan :
+                        </Typography>
+                        <Select className="shadow-lg" label="Pilih Storage">
+                            <Option>1</Option>
+                            <Option>2</Option>
+                            <Option>3</Option>
+                            <Option>4</Option>
+                            <Option>5</Option>
+                            <Option>6</Option>
+                            <Option>7</Option>
+                            <Option>8</Option>
+                            <Option>9</Option>
+                            <Option>10</Option>
+                            <Option>11</Option>
+                            <Option>12</Option>
+                            <Option>13</Option>
+                            <Option>14</Option>
+                            <Option>15</Option>
+                        </Select>
+                        <Select className="shadow-lg" label="Pilih Lantai">
+                            <Option>1</Option>
+                            <Option>2</Option>
+                            <Option>3</Option>
+                            <Option>4</Option>
+                            <Option>5</Option>
+                            <Option>6</Option>
+                            <Option>7</Option>
+                            <Option>8</Option>
+                            <Option>9</Option>
+                            <Option>10</Option>
+                            <Option>11</Option>
+                            <Option>12</Option>
+                            <Option>13</Option>
+                            <Option>14</Option>
+                            <Option>15</Option>
+                        </Select>
+                        <Select className="shadow-lg" label="Pilih Lajur">
+                            <Option>01</Option>
+                            <Option>02</Option>
+                            <Option>03</Option>
+                            <Option>04</Option>
+                            <Option>05</Option>
+                            <Option>06</Option>
+                            <Option>07</Option>
+                            <Option>08</Option>
+                            <Option>09</Option>
+                            <Option>10</Option>
+                            <Option>11</Option>
+                            <Option>12</Option>
+                            <Option>13</Option>
+                            <Option>14</Option>
+                            <Option>15</Option>
+                        </Select>
+                        <Select className="shadow-lg" label="Pilih Laci">
+                            <Option>01</Option>
+                            <Option>02</Option>
+                            <Option>03</Option>
+                            <Option>04</Option>
+                            <Option>05</Option>
+                            <Option>06</Option>
+                            <Option>07</Option>
+                            <Option>08</Option>
+                            <Option>09</Option>
+                            <Option>10</Option>
+                            <Option>11</Option>
+                            <Option>12</Option>
+                            <Option>13</Option>
+                            <Option>14</Option>
+                            <Option>15</Option>
+                        </Select>
+                        <Input 
+                            className=""
+                            label="Slot"
+                            >
+                        </Input>
+                    </div>
+                </CardBody>
+
+                <CardBody>
                     <div className="flex justify-start">
                         <Typography 
                             className="justify-start w-60 md:md-inset-0"
                             variant="h6"
                             >
-                            Lokasi Penyimpanan
+                            Genrate code :
                         </Typography>
-                        <Input className="grid justify-items-start " label="Lokasi Penyimpanan" />   
+                        <Input 
+                            className="grid justify-items-start"  
+                            disabled
+                        />   
                     </div>
                 </CardBody>
-        
+
                 <CardBody>
                     <div className="flex justify-start">
                         <Typography 
@@ -193,10 +285,11 @@ export function Sumberdayaalam() {
                             >
                             Kondisi
                         </Typography>
-                        <Input 
-                            className="grid justify-items-start" 
-                            label="Kondisi"
-                        />   
+                        <Select className="shadow-lg" label="Pilih Jenis Koleksi">
+                            <Option>B - BAIK</Option>
+                            <Option>RR - Rusak Ringan</Option>
+                            <Option>RB - Rusak Berat</Option>
+                        </Select>
                     </div>
                 </CardBody>
         
@@ -214,16 +307,31 @@ export function Sumberdayaalam() {
                         />   
                     </div>
                 </CardBody>
-        
+
                 <CardBody>
                     <div className="flex justify-start">
                         <Typography 
                             className="justify-start w-60 md:md-inset-0"
                             variant="h6"
                             >
-                            Keterangan
+                            Deskripsi Koleksi
                         </Typography>
                         <Input 
+                            className="grid justify-items-start" 
+                            label="Deskripsi Koleksi"
+                        />   
+                    </div>
+                </CardBody>
+
+                <CardBody>
+                    <div className="flex justify-start">
+                        <Typography
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                            >
+                            Keterangan
+                        </Typography>
+                        <Textarea 
                             className="grid justify-items-start" 
                             label="Keterangan"
                         />   
@@ -238,10 +346,25 @@ export function Sumberdayaalam() {
                             >
                             Umur Geologi
                         </Typography>
-                        <Input 
-                            className="grid justify-items-start" 
-                            label="Umur Geologi" 
-                        />   
+                        <Select className="shadow-lg" label="Pilih Umur Geologi">
+                            <Option>Prakambrium</Option>
+                            <Option>Paleozoikum - Kambrium</Option>
+                            <Option>Paleozoikum - Ordovium</Option>
+                            <Option>Paleozoikum - Silur</Option>
+                            <Option>Paleozoikum - Devon</Option>
+                            <Option>Paleozoikum - Karbon</Option>
+                            <Option>Paleozoikum - Perem</Option>
+                            <Option>Mesozoikum  - Trias</Option>
+                            <Option>Mesozoikum  - Jura</Option>
+                            <Option>Mesozoikum  - Kapur</Option>
+                            <Option>Kenozoikum  - Paleogen</Option>
+                            <Option>Kenozoikum  - Eosen</Option>
+                            <Option>Kenozoikum  - Oligosen</Option>
+                            <Option>Kenozoikum  - Miosen</Option>
+                            <Option>Kenozoikum  - Pliosen</Option>
+                            <Option>Kenozoikum  - Plistosen</Option>
+                            <Option>Kenozoikum  - Holosen</Option>
+                        </Select>
                     </div>
                 </CardBody>
         
@@ -259,73 +382,25 @@ export function Sumberdayaalam() {
                         />   
                     </div>
                 </CardBody>
-        
+
                 <CardBody>
-                    <div className="flex justify-start">
-                        <Typography 
-                            className="justify-start w-60 md:md-inset-0"
-                            variant="h6"
-                            >
-                            Lokasi Temuan
-                        </Typography>
-                        <Input 
-                            className="grid justify-items-start" 
-                            label="Lokasi Temuan"
-                        />   
-                    </div>
-                </CardBody>
-        
-                <CardBody>
-                    <div className="flex justify-start">
-                        <Typography 
-                            className="justify-start w-60 md:md-inset-0"
-                            variant="h6"
-                            >
-                            Lokasi Awal
-                        </Typography>
-                        <Input 
-                            className="grid justify-items-start" 
-                            label="Lokasi Awal"
-                        />   
-                    </div>
-                </CardBody>
-        
-                <CardBody>
-                {/* <div className="flex">
-                    <Typography className="flex">
-                        Kordinat
-                    </Typography>
-                        <div className="bg-slate-100 rounded-lg px-5 w-72 pr-4 flex">
-                            <div className="flex justify-end ml-9">
-                                <div className="">
-                                    <div className="">
-                                        <Input className="" label="X" />
-                                    </div>                                   
-                                    <div className="mr-2 ml-4">
-                                        <Input className=" " label="Y" />
-                                    </div>
-                                    <div className="mr-2 ml-4">
-                                    <Input className=" "  label="Z" />
-                                    </div>     
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
                     <div className="grid grid-flow-row auto-rows-max gap-4 md:auto-rows-min">
                         <Typography 
-                            className="justify-start w-max md:md-inset-0"
+                            className="justify-start w-60 md:md-inset-0"
                             variant="h6"
-                        >
-                            Kordinat :
+                            >
+                            Ditemukan :
                         </Typography>
-                        <div><Input className="" label="X"></Input></div>
-                        <div><Input className="" label="Y"></Input></div>
-                        <div><Input className="" label="Z"></Input></div>
+                        <div className="flex gap-10">
+                            <Radio id="dalamnegeri" name="type" label="Dalam Negeri" />
+                            <Radio id="luarnegeri" name="type" label="Luar Negeri" />
+                            <Radio id="nn" name="type" label="NN" defaultChecked />
+                        </div>
                     </div>
                 </CardBody>
-        
+
                 <CardBody>
-                    <div className="flex justify-start">
+                    <div className="grid grid-flow-row auto-rows-max gap-4 md:auto-rows-min">
                         <Typography 
                             className="justify-start w-60 md:md-inset-0"
                             variant="h6"
@@ -340,6 +415,78 @@ export function Sumberdayaalam() {
                 </CardBody>
 
                 <CardBody>
+                <div className="grid grid-flow-row auto-rows-max gap-4 md:auto-rows-min">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                            >
+                            Lokasi Temuan :
+                        </Typography>
+                        <Select className="shadow-lg" label="Pilih Provinsi">
+                            <Option>Jawa Barat</Option>
+                            <Option>Jawa Tengah</Option>
+                            <Option>Jawa Timur</Option>
+                        </Select>
+                        <Select className="shadow-lg" label="Pilih Kabupaten/Kota">
+                            <Option>Bandung</Option>
+                            <Option>Bekasi</Option>
+                            <Option>Jakarta</Option>
+                        </Select>
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                            >
+                            Alamat Lengkap :
+                        </Typography>
+                        <Textarea 
+                            className="grid justify-items-start" 
+                            label="Alamat"
+                        />   
+                    </div>
+                </CardBody>
+
+                <CardBody>
+                    <div className="grid grid-flow-row auto-rows-max gap-4 md:auto-rows-min">
+                        <Typography 
+                            className="justify-start w-max md:md-inset-0"
+                            variant="h6"
+                        >
+                            Kordinat :
+                        </Typography>
+                        <div>
+                            <Typography>
+                                Latitude 
+                            </Typography>
+                            <Input 
+                                className="shadow-lg" 
+                                label="Latitude"
+                                >
+                            </Input>
+                        </div>
+                        <div>
+                            <Typography>
+                                Longitude
+                            </Typography>
+                            <Input 
+                                className="shadow-lg" 
+                                label="Longitude"
+                                >
+                            </Input>
+                        </div>
+                        <div>
+                            <Typography>
+                                Elevasi
+                            </Typography>
+                            <Input 
+                                className="shadow-lg" 
+                                label="Elevasi"
+                                >
+                            </Input>
+                        </div>
+                    </div>
+                </CardBody>
+
+                <CardBody>
                     <div className="flex justify-start">
                         <Typography 
                             className="justify-start w-60 md:md-inset-0"
@@ -347,27 +494,12 @@ export function Sumberdayaalam() {
                             >
                             Peta
                         </Typography>
-                        <Input 
-                            className="grid justify-items-start" 
-                            label="Peta"
-                        />   
-                    </div>
-                </CardBody>
-        
-                <CardBody>
-                    <div className="flex justify-start">
-                        <Typography 
-                            className="justify-start w-60 md:md-inset-0"
-                            variant="h6"
-                            >
-                            Lembar Peta
-                        </Typography>
-                        <Select className="w-full shadow-lg" label="Select Lembar Peta">
-                            <Option>Peta </Option>
-                            <Option>Peta </Option>
-                            <Option>Peta </Option>
+                        <Select className="w-full shadow-lg" label="Peta">
+                            <Option>Rupa Bumi</Option>
+                            <Option>Geologi</Option>
+                            <Option>Blad</Option>
                         </Select>  
-                        </div>
+                    </div>
                 </CardBody>
         
                 <CardBody>
@@ -378,11 +510,26 @@ export function Sumberdayaalam() {
                             >
                             Skala
                         </Typography>
-                        <Select className="w-full shadow-lg" label="Select Skala Peta">
+                        <Select className="w-full shadow-lg" label="Pilh Skala Peta">
                             <Option>1:50.000</Option>
                             <Option>1:100.000</Option>
                             <Option>1:250.000</Option>
                         </Select>   
+                    </div>
+                </CardBody>
+
+                <CardBody>
+                    <div className="flex justify-start">
+                        <Typography 
+                            className="justify-start w-60 md:md-inset-0"
+                            variant="h6"
+                            >
+                            Lembar Peta
+                        </Typography>
+                        <Input 
+                            className="grid justify-items-start" 
+                            label="Lembar Peta"
+                        />   
                     </div>
                 </CardBody>
         
@@ -394,10 +541,12 @@ export function Sumberdayaalam() {
                             >
                             Cara Perolehan
                         </Typography>
-                        <Input 
-                            className="grid justify-items-start" 
-                            label="Cara Perolehan"
-                        />   
+                        <Select className="shadow-lg" label="Pilih Cara Perolehan">
+                            <Option>Pembuatan</Option>
+                            <Option>Pembelian</Option>
+                            <Option>Hibah</Option>
+                            <Option>Penyelidikan Geologi</Option>
+                        </Select>
                     </div>
                 </CardBody>
         
@@ -409,9 +558,10 @@ export function Sumberdayaalam() {
                             >
                             Tahun Perolehan
                         </Typography>
-                        <Input 
-                            className="grid justify-items-start" 
-                            label="Tahun Perolehan"
+                        <input 
+                            
+                            className="datepicker grid justify-items-start"
+                            type="date"
                         />   
                     </div>
                 </CardBody>
@@ -454,10 +604,11 @@ export function Sumberdayaalam() {
                             >
                             Kepemilikan Awal
                         </Typography>
-                        <Input 
-                            className="grid justify-items-start" 
-                            label="Kepemilikan Awal"
-                        />   
+                        <Select className="shadow-lg" label="Pilih Kepemilikan Awal">
+                            <Option>Musuem Geologi Bandung</Option>
+                            <Option>Dienst van den Mijnbouw</Option>
+                            <Option>-</Option>
+                        </Select>
                     </div>
                 </CardBody>
         
@@ -501,7 +652,6 @@ export function Sumberdayaalam() {
                         </Typography>
                         <Input 
                             className="grid justify-items-start" 
-                            label="Gambar 1" 
                             type="file"
                         />   
                     </div>
@@ -516,8 +666,7 @@ export function Sumberdayaalam() {
                             Gambar 2
                         </Typography>
                         <Input 
-                            className="grid justify-items-start" 
-                            label="Gambar 2" 
+                            className="grid justify-items-start"  
                             type="file"
                         />   
                     </div>
@@ -532,8 +681,7 @@ export function Sumberdayaalam() {
                             Gambar 3
                         </Typography>
                         <Input 
-                            className="grid justify-items-start" 
-                            label="Gambar 3" 
+                            className="grid justify-items-start"  
                             type="file"
                         />   
                     </div>
@@ -557,4 +705,4 @@ export function Sumberdayaalam() {
     );
 }
 
-export default Sumberdayaalam;
+export default Sumberdayageologi;

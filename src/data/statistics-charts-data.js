@@ -72,13 +72,6 @@ const completedTasksChart = {
 
 export const statisticsChartsData = [
   {
-    color: "blue",
-    title: "Sumber Daya Alam",
-    // description: "Last Campaign Performance",
-    footer: "campaign sent 2 days ago",
-    chart: websiteViewsChart,
-  },
-  {
     color: "pink",
     title: "Batuan",
     // description: "15% increase in today sales",
@@ -91,6 +84,13 @@ export const statisticsChartsData = [
     // description: "Last Campaign Performance",
     footer: "just updated",
     chart: completedTasksChart,
+  },
+  {
+    color: "blue",
+    title: "Sumber Daya Alam",
+    // description: "Last Campaign Performance",
+    footer: "campaign sent 2 days ago",
+    chart: websiteViewsChart,
   },
 ];
 

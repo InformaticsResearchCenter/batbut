@@ -7,17 +7,6 @@ import {
 
 export const statisticsCardsData = [
   {
-    color: "blue",
-    icon: ChartBarIcon,
-    title: "Sumber Daya Alam",
-    value: "23,342",
-    footer: {
-      color: "text-green-500",
-      value: "+55%",
-      label: "than last week",
-    },
-  },
-  {
     color: "pink",
     icon: ChartBarIcon,
     title: "Batuan",
@@ -37,6 +26,17 @@ export const statisticsCardsData = [
       color: "text-red-500",
       value: "-2%",
       label: "than yesterday",
+    },
+  },
+  {
+    color: "blue",
+    icon: ChartBarIcon,
+    title: "Sumber Daya Alam",
+    value: "23,342",
+    footer: {
+      color: "text-green-500",
+      value: "+55%",
+      label: "than last week",
     },
   },
   // {

@@ -7,7 +7,7 @@ import {
   ArrowRightOnRectangleIcon,
   UserPlusIcon,
 } from "@heroicons/react/24/solid";
-import { Home, Profile, Tables, Batuan, Sumberdayaalam, Fosil} from "@/pages/dashboard";
+import { Home, Profile, Tables, Batuan, Sumberdayageologi, Fosil} from "@/pages/dashboard";
 import { SignIn, SignUp } from "@/pages/auth";
 
 
@@ -39,12 +39,6 @@ export const routes = [
       },
       {
         icon: <PencilIcon {...icon} />,
-        name: "Sumber Daya Alam",
-        path: "/sumberdayaalam",
-        element: <Sumberdayaalam />,
-      },
-      {
-        icon: <PencilIcon {...icon} />,
         name: "Batuan",
         path: "/batuan",
         element: <Batuan />,
@@ -54,6 +48,12 @@ export const routes = [
         name: "Fosil",
         path: "/fosil",
         element: <Fosil/>,
+      },
+      {
+        icon: <PencilIcon {...icon} />,
+        name: "Sumber Daya Geologi",
+        path: "/sumberdayageologi",
+        element: <Sumberdayageologi />,
       },
     ],
   },
